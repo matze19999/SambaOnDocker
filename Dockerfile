@@ -1,4 +1,6 @@
 FROM alpine:edge
+RUN PASSWD=0
+RUN USER=0
 RUN apk add --update samba-common-tools samba-client samba-server && rm -rf /var/cache/apk/*
 RUN PASS=$PASSWD
 RUN adduser -s /sbin/nologin -h /home/samba -H -D $USER
