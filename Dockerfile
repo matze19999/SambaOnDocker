@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:latest
 
 RUN apk add --update samba-common-tools samba-client samba-server && rm -rf /var/cache/apk/*
 
