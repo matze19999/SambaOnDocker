@@ -1,5 +1,8 @@
 FROM alpine:edge
 
+ARG USER=USER
+ARG PASSWD=PASSWD
+
 RUN apk add --update samba-common-tools samba-client samba-server && rm -rf /var/cache/apk/*
 
 RUN PASS=$PASSWD
