@@ -1,5 +1,15 @@
 FROM alpine:edge
 
+# Geschrieben von
+# Matthias Pröll <proell.matthias@gmail.com>
+# Staudigl-Druck GmbH & Co. KG
+# Letzte Anpassung: 2019/09/17
+
+# Labels
+LABEL vendor="Staudigl-Druck GmbH & Co. KG"
+LABEL maintainer="Matthias Pröll (proell.matthias@gmail.com)"
+LABEL release-date="2019-09-17"
+
 RUN apk add --update \
     samba-common-tools \
     samba-client \
