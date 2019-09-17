@@ -1,0 +1,15 @@
+#Stack: Samba
+
+version: '3.6'
+services:
+  samba:
+    image: matze19999/samba:latest
+    ports:
+      - '139:139'
+      - '445:445'
+    volumes:
+      - '/Docker/fileserver/files:/share'
+      - '/Docker/samba/config/smb.conf:/etc/samba/smb.conf'
+    environment:
+      SAMBA_USERNAME: "USERNAME"
+      SAMBA_PASSWORD: "PASSWORD"
