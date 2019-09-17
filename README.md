@@ -3,7 +3,7 @@
 Use Samba on Docker!
 
 ## Base Image
-Alpine Edge <Latest>
+Alpine Edge:latest
 
 ## Architecture
 amd32 / amd64
